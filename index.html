@@ -1,102 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-<title>FlexDemo Velkei</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout Demo</title>
 
-</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- Note 
-<div style="background:yellow;padding:5px">
-  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
-</div>
--->
+  <!--   ----------------Navigáció------------------   -->
 
-<ul class="stickymenu">
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">About</a></li>
-  <li><a href="#news">Portfolio</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-
-
-
-<!-- Header -->
-<div class="header" id="home">
-  <h1 class="velktext">Velkei Html Css</h1>
-  <!--<p>With a <b>flexible</b> layout.</p>-->
-  <p class="logotext"><strong>Design</strong> and <strong>Develope Awesome</strong> stuff</p>
-</div>
-
-<!-- Navigation Bar -->
-<!--
-<div class="navbar">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
--->
-
-
-
-<!-- The flexible grid (content) -->
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <!--<div class="notfakeimg" style="height:200px;">Image</div>-->
-
-    <!--<img class="notfakeimg" src="img/002.jpg" alt="photo about me">-->
-
-    <div class="notfakeimg"></div>
-
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+  <div class="navcontainer">
+    <div class="navigation">
+      <div class="social-links"><a target="_blank" href="https://www.facebook.com/rud4n/"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://github.com/velkei"><i id="github" class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/rudolf-velkei-2a584822b/"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+   </div>
   </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
-</div>
 
-<div class="sales-points">
-  <div class="sales-point">
-    <h2>HTML CSS</h2>
-    <p>Maecenas id volutpat tellus. Praesent at rhoncus ante, non sollicitudin nisl.</p>
-  </div>
-  <div class="sales-point">
-    <h2>Design</h2>
-    <p>Maecenas id volutpat tellus. Praesent at rhoncus ante, non sollicitudin nisl.</p>
-  </div>
-  <div class="sales-point">
-    <h2>Support</h2>
-    <p>Maecenas id volutpat tellus. Praesent at rhoncus ante, non sollicitudin nisl.</p>
-  </div>
-</div>
 
-<!-- Footer -->
-<div class="footer">
-  <h4>NoCopyright - 2022</h4>
-</div>
+  <!-- -------------Hero image - kezdőlap ------------ -->
+
+  
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Velkei Rudolf</h1>
+      <p>kreatív, alapos, ügyfélbarát webfejlesztő</p>
+      <p>HTML CSS Webdesign</p>
+    </div>
+  </div>
+
+
+  <!--  --------------   rólam szekció  ----------------  -->
+
+
+
+  
+  <div class="about" id="about">
+    <div class="about-inner">
+      <div class="about-box1"><img src="img/kez3.jpg" alt="robothand"></div>
+      <div class="about-box2">
+        <div class="about-text">
+          <h2>Rólam..</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Provident totam excepturi ducimus voluptatum reiciendis 
+          tenetur tempore optio nostrum nobis molestiae sit 
+          necessitatibus voluptates placeat quae repudiandae
+           illo, esse possimus id!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Provident totam excepturi ducimus voluptatum reiciendis 
+           tenetur tempore optio nostrum nobis molestiae
+         </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  --------------   kapcsolat  ----------------  -->
+
+
+  <div class="kapcsolat" id="contact">
+    <div class="kapcsolat-inner">
+      <div class="kapcsolat-bal">
+        <h3>Kapcsolat</h3>
+        <h2>Sirály weboldalra vágysz?</h2>
+        <p>Lépj kapcsolatba velem!</p>
+          <p>Megoldjuk egy hét alatt!</p><br>
+        <a class="maillink" href="mailto:tojás@citromlé.hu"><i class="fa-regular fa-envelope"></i>tojás@citromlé.hu</a>
+      </div>
+      <div class="kapcsolat-jobb">
+        
+            <p>Név:</p>
+            <label for="nev"><input placeholder="add meg a neved" class="inputstyle" type="text" required></label>
+        
+             <p>email:</p>
+            <label for="email"><input placeholder="emailcímed" class="inputstyle" type="email" required></label>
+        
+            <p>üzenet:</p>
+            <label for="uzenet"></label>
+        <textarea class="inputstyle" name="uzenet" id="uzenet" rows="8"></textarea><br>
+        <input class="submitbtn" type="submit" value="Elküld">
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

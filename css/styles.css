@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/*------------navigáció------------- */
+.navcontainer {
+  width: 100%;
+  background-color: #333;
+
+  position: fixed;
+  top: 0;
+}
+
+.navigation {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+}
+
+.navbar a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.social-links i {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+@media (max-width:700px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
+
+/*-----------------------------------*/
+/*---------hero kezdőlap-------------*/
+
+.hero-image {
+  height: 100vh;
+  background-color: steelblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*-----------------------------------*/
+/*-------------abot szekció----------*/
+.about-inner {
+  
+  display: flex;
+  
+}
+
+.about-box1 {
+  flex: 1 1 50%;
+}
+
+.about-box1 img {
+  display: block;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.about-box2 {
+  flex: 1 1 50%;
+  background-color: peru;
+}
+
+@media (max-width:700px) {
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-box1 img {
+    width: 100%;
+  }
+}
+
+/*-----------------------------------*/
+/*----------kapcsolat oldal----------*/
+
+.kapcsolat-inner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333;
+}
+
+
+
+
+@media (max-width:700px) {
+  .kapcsolat-inner {
+    flex-direction: column;
+  }
+}
+
+/*-----------------------------------*/
+/*-------footer szekció--------------*/
+
+
+/*-----------------------------------*/
