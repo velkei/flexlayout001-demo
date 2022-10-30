@@ -73,7 +73,10 @@
   </div>
 
   <!-- ------------- első elsálasztó ---------------- -->
-
+  <div class="elvalaszto-head"> 
+    <h2>Valami mondanivaló</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+  </div>
   <div class="elvalaszto">
     <div class="elvalaszto-box">
       <h2>Template</h2>
@@ -121,17 +124,25 @@
         <h2>Sirály weboldalra vágysz?</h2>
         <p>Lépj kapcsolatba velem!</p>
           <p>Megoldjuk egy hét alatt!</p><br>
-        <a class="maillink" href="mailto:tojás@citromlé.hu"><i class="fa-regular fa-envelope"></i>tojás@citromlé.hu</a>
+        
       </div>
       <div class="kapcsolat-jobb">
         
-            <p>Név:</p>
-            <label for="nev"><input placeholder="add meg a neved" class="inputstyle" type="text" required></label>
+            
+            <label for="nev">
+              <div class="input-ikonnal">
+              <input type="text" placeholder="add meg a neved">
+              <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
         
-             <p>email:</p>
-            <label for="email"><input placeholder="emailcímed" class="inputstyle" type="email" required></label>
+              </div>
+            </label>
+            <label for="email">
+              <div class="input-ikonnal">
+                <input type="email" placeholder="add meg az email címed">
+                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+            </label>
         
-            <p>üzenet:</p>
             <label for="uzenet"></label>
         <textarea class="inputstyle" name="uzenet" id="uzenet" rows="8"></textarea><br>
         <input class="submitbtn" type="submit" value="Elküld">
