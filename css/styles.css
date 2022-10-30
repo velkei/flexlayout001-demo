@@ -283,6 +283,12 @@ a {
   
 }
 
+.kapcsolat-jobb {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
 /* ---------------- input stylok -----------------*/
 /*------------------------------------------------*/
 
@@ -389,16 +395,16 @@ input[type=email]:focus {
     text-align: center;
   }
 
-  .input[type=text] {
-    max-width: 20ch;
+  input[type=text] {
+    max-width: 25ch;
   }
 
-  .input[type=email] {
-    max-width: 20ch;
+  input[type=email] {
+    max-width: 25ch;
   }
 
   .kapcsolat-jobb textarea {
-    max-width: 20ch;
+    max-width: 25ch;
   }
 }
 
