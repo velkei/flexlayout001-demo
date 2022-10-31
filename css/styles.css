@@ -407,10 +407,11 @@ input[type=email]:focus {
 
   .kapcsolat-bal {
     text-align: center;
+    margin-top: 4rem;
   }
 
   .kapcsolat-jobb {
-    padding-bottom: 1rem;
+    margin-bottom: 4rem;
     text-align: center;
   }
 
