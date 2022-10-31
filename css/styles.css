@@ -280,20 +280,33 @@ a {
 
 .kapcsolat-bal p {
   color: #fff;
-  
+  line-height: 1.6rem;
 }
 
 .kapcsolat-jobb {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
+  
+  
+
+  flex-basis: 30%;
+  
+  
+  
+  
+}
+
+.kapcsolat-bal {
+  
+  
+
+  flex-basis: 30%;
+
 }
 
 /* ---------------- input stylok -----------------*/
 /*------------------------------------------------*/
 
 input[type=text] {
-  width: 40ch;
+  width: 100%;
   border: 2px solid #aaa;
   padding: 8px;
   border-radius: 8px;
@@ -313,7 +326,7 @@ input[type=text]:focus {
 /*----email mező--------*/
 
 input[type=email] {
-  width: 40ch;
+  width: 100%;
   border: 2px solid #aaa;
   padding: 8px;
   border-radius: 8px;
@@ -362,7 +375,7 @@ input[type=email]:focus {
 }
 
 .kapcsolat-jobb textarea {
-  width: 40ch;
+  width: 100%;
   border: 2px solid #aaa;
   padding: 8px;
   border-radius: 8px;
@@ -378,6 +391,7 @@ input[type=email]:focus {
 .submitbtn {
   margin-top: 10px;
   padding: 8px 20px;
+  
 }
 
 /*------------------------------------------------*/
@@ -395,16 +409,21 @@ input[type=email]:focus {
     text-align: center;
   }
 
+  .kapcsolat-jobb {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
   input[type=text] {
-    max-width: 25ch;
+    width: 100%;
   }
 
   input[type=email] {
-    max-width: 25ch;
+    width: 100%;
   }
 
   .kapcsolat-jobb textarea {
-    max-width: 25ch;
+    width: 100%;
   }
 }
 
