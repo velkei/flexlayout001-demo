@@ -171,7 +171,8 @@ a {
 
 .hero-text {
   flex: 1 0 40;
-  align-content: center;
+  /*align-content: center;*/
+  
 }
 
 .hero-p {
@@ -194,11 +195,17 @@ a {
 .hero-h1 {
   text-transform: uppercase;
   font-size: 7vw;
+  
   /*border: 1px solid black;*/
 }
 
 
 @media (max-width: 900px) {
+  
+  .hero-container {
+    height: 100vh;
+  }
+  
   .hero {
     flex-direction: column;
     align-items: center;
@@ -213,7 +220,11 @@ a {
   }
 
   .hero-h1  {
-    font-size: 4rem;
+    font-size: 0rem;
+  }
+
+  .hero-p {
+    font-size: 0rem;
   }
 }
 
@@ -369,6 +380,8 @@ a {
 @media (max-width:700px) {
   .proof-inner {
     flex-direction: column;
+    position: relative;
+    top:100;
   }
 
   .proof-box2 img {
