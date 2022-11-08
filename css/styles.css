@@ -213,6 +213,7 @@ a {
   }
 
   .hero-text {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,10 +222,15 @@ a {
 
   .hero-h1  {
     font-size: 0rem;
+    
   }
 
   .hero-p {
     font-size: 0rem;
+  }
+
+  .hero-btn {
+    margin-top: -5em;
   }
 }
 
