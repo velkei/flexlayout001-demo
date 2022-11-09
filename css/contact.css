@@ -7,7 +7,7 @@
   align-items: center;
 
   background-color: #333;
-  border-bottom: 1px solid var(--color-kek);
+  
   gap: 4rem;
 }
 
@@ -134,10 +134,27 @@ input[type=email]:focus {
 }
 
 .submitbtn {
-  margin-top: 10px;
-  padding: 8px 20px;
-  
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2em;
+  border: 0;
+  padding: 1em 2em;
+  font-size: 0.9rem;
+  transition: all 250ms;
+  border-radius: 5px;
 }
+
+.submitbtn:hover {
+  background-color: var(--color-kek);
+  border: 0;
+  color: white;
+  box-shadow: 3px 3px 30px rgb(0, 0, 0);
+}
+
+
+
 
 /*------------------------------------------------*/
 
@@ -148,18 +165,19 @@ input[type=email]:focus {
   .kapcsolat-inner {
     flex-direction: column;
     height: 100vh;
-    position: relative;
-    top:100;
+    
   }
 
   .kapcsolat-bal {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 8em;
   }
 
   .kapcsolat-jobb {
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
     text-align: center;
+    
+    
   }
 
   input[type=text] {
@@ -172,5 +190,32 @@ input[type=email]:focus {
 
   .kapcsolat-jobb textarea {
     width: 100%;
+  }
+
+  .kapcsolat-bal h3 {
+    font-size: 0;
+  }
+
+  .kapcsolat-bal h2{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .kapcsolat-bal p {
+    color: #fff;
+    line-height: 1.6em;
+    
+  }
+
+  .social-links {
+    margin: 0;
+    
+  }
+
+  .social-links i {
+    margin-bottom: 0;
+    
+    font-size: 1.2rem;
   }
 }

@@ -36,11 +36,18 @@ a {
   font-family: 'Noto Sans', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /*-----------------------------------*/
 /*------------navigáció------------- */
 .navcontainer {
   width: 100%;
-  background-color: var(--color-piros);
+  /*background-color: var(--color-piros);*/
+
+  background-color: rgb(53, 52, 52);
 
   position: fixed;
   top: 0;
@@ -64,11 +71,16 @@ a {
   color: white;
 /*  border: 1px solid var(--color-kek);*/
   padding: 1px 12px;
-  padding-right: 100px;
+  
   margin: 3px 0;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: var(--color-kek);
+  border-radius: 10px;
+  background: var(--color-kek);
+  cursor: pointer;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
 }
 
 .logo-h2 {
@@ -117,9 +129,18 @@ a {
   transform: translateX(0);
 }
 
+.social-links {
+  
+  margin-top: 2em;
+  
+}
+
 .social-links i {
+  
   color: #fff;
-  margin-right: 1rem;
+  margin-right: .7em;
+  
+  font-size: 2.6rem;
 }
 
 @media (max-width:700px) {
@@ -136,10 +157,11 @@ a {
 /*---------hero kezdőlap-------------*/
 
 .hero-container {
-  background-color: var(--color-kek);
-  width: 100%;
+  /*background-color: var(--color-kek);*/
 
-  
+  background: linear-gradient(180deg, #345aa4 -28.35%, rgba(0, 62, 156, 0) 153%);
+
+  width: 100%;
 }
 
 .hero {
@@ -148,7 +170,9 @@ a {
   max-width: 95%;
   margin: 0 auto;
   
-  background-color: var(--color-kek);
+  /*background-color: var(--color-kek);*/
+
+  
 
   /*border: 10px solid black;*/
 
@@ -159,19 +183,17 @@ a {
 
 .hero-image-container {
   /*border: 1px solid black;*/
-  flex: 1 0 40;
+  width: 40%;
 }
 
-.hero-image {
+/*.hero-image {
   max-width: 100%;
-
-}
-
-
+}*/
 
 .hero-text {
-  flex: 1 0 40;
-  /*align-content: center;*/
+  /*border: 1px solid black;*/
+  width: 30%;
+  
   
 }
 
@@ -183,27 +205,53 @@ a {
 
 .hero-btn {
   display: inline-block;
-  padding: 5px 12px;
+  padding: 0.6em 1.2em;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  background-color: var(--color-piros);
+  color:black;
+  background-color: var(--color-kek);
+  border-radius: 10px;
   font-size: 2rem;
+  font-weight: 700;
   margin-top: 2em;
+
+  transition: all 250ms;
+}
+
+.hero-btn:hover {
+  color: white;
+  background-color: rgb(53, 52, 52);
+  -webkit-box-shadow: 10px 10px 99px 6px rgb(68, 67, 68);
+  -moz-box-shadow: 10px 10px 99px 6px rgb(70, 68, 70);
+  box-shadow: 10px 10px 99px 6px rgb(70, 69, 70);
 }
 
 .hero-h1 {
   text-transform: uppercase;
-  font-size: 7vw;
+  font-size: 6rem;
   
+  position: relative;
   /*border: 1px solid black;*/
+}
+
+.hero-h1::before {
+  content: "";
+  height: 40%;
+  width: 100%;
+  z-index: -1;
+  background-color: #444342;
+
+  position: absolute;
+  top:80px;
+  left:20px;
 }
 
 
 @media (max-width: 900px) {
   
   .hero-container {
-    height: 100vh;
+    height: auto;
+    
   }
   
   .hero {
@@ -212,30 +260,42 @@ a {
     justify-content: end;
   }
 
+  .hero-image-container{
+    width: 100%;
+    order: -1;
+  }
+
   .hero-text {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 
   .hero-h1  {
-    font-size: 0rem;
-    
+    font-size: 2rem;
+    overflow: hidden;
   }
 
+  
+
   .hero-p {
-    font-size: 0rem;
+    font-size: 1rem;
   }
 
   .hero-btn {
-    margin-top: -5em;
+    margin-bottom: 2em;
   }
+  
 }
 
 /*-----------------------------------*/
 /*-------------about szekció----------*/
+
+.img-rudi {
+  /*border-radius: 50%;*/
+  box-shadow: 10px 10px 10px rgb(68, 67, 67);
+  margin-bottom: 2em;
+}
+
 .about-inner {
   
   display: flex;
@@ -265,6 +325,10 @@ a {
 
 .about-text {
   max-width: 40ch;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 @media (max-width:700px) {
@@ -289,13 +353,14 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .elvalaszto-head h2 {
   font-size: 2.2rem;
   margin-top: 4rem;
   text-transform: uppercase;
-  color: var(--color-piros);
+  color: var(--color-kek);
 }
 
 .elvalaszto-head p {
@@ -303,40 +368,69 @@ a {
   margin-bottom: 2rem;
   max-width: 40ch;
   text-align: center;
-
+  
 }
 
 
 .elvalaszto {
   display: flex;
   flex-direction: row;
-  height: 40vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
-  
+  margin-bottom: 8em;
 }
 
 .elvalaszto-box {
   max-width: 25ch;
   
-  border: 1px solid var(--color-piros);
+  border: 1px solid rgb(109, 108, 108);
   border-radius: 0% 0% 10px 10px;
   text-align: center;
-  background-color: var(--color-sarga1);
+  background-color: rgb(214, 211, 211);
+
+  box-shadow: 5px 5px 5px gray;
 }
 
 .elvalaszto-box h2 {
-  background-color: var(--color-piros);
+  background-color: var(--color-kek);
   padding-bottom: 6px;
   padding-top: 6px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .elvalaszto-box p {
   padding-top: 24px;
   padding-bottom: 52px;
+  
+}
+
+
+/* ---------------
+  elválsztó ikonok
+----------------- */
+
+.fa-html5,
+.fa-css3-alt,
+.fa-truck-medical {
+  font-size: 4rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fa-html5 {
+  color: var(--color-piros);
+}
+
+.fa-css3-alt {
+  color: var(--color-sarga2);
+}
+
+.fa-truck-medical {
+  color: var(--color-kek);
 }
 
 @media (max-width:700px) {
@@ -386,17 +480,19 @@ a {
 @media (max-width:700px) {
   .proof-inner {
     flex-direction: column;
-    position: relative;
-    top:100;
+    
+    
   }
 
   .proof-box2 img {
     width: 100%;
+    
   }
 
   .proof-box1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    order: 99;
   }
 }
 
@@ -406,7 +502,7 @@ a {
 /*-------footer szekció--------------*/
 
 .footer {
-  background-color: black;
+  background-color: rgb(46, 44, 44);
   height: 120px;
 
   display: flex;
