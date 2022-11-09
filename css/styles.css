@@ -333,6 +333,10 @@ img {
   gap: 2em;
 }
 
+.about-text p {
+  text-align: justify;
+}
+
 @media (max-width:700px) {
   .about-inner {
     flex-direction: column;
@@ -465,6 +469,14 @@ img {
 
 .proof-text {
   max-width: 40ch;
+}
+
+.proof-text p {
+  text-align: justify;
+}
+
+.proof-text h2 {
+  margin-bottom: 1.5em;
 }
 
 .proof-box2 {
