@@ -517,6 +517,10 @@ img {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .elvalaszto-head h1 {
+    font-size: 2rem;
+  }
 }
 
 /*-----------------------------------*/
