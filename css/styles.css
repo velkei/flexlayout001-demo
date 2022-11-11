@@ -236,23 +236,55 @@ img {
   padding: 0.3em 1.1em;
   text-decoration: none;
   text-transform: uppercase;
-  color:black;
-  background-color: var(--color-kek);
-  border-radius: 10px;
+  color: var(--color-kek);
+  background-color: var(--color-sarga2);
+  /*border-radius: 10px;*/
+
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
   font-size: 2rem;
   font-weight: 700;
   margin-top: 2em;
   letter-spacing: 1.4px;
 
   transition: all 250ms;
+  animation: btn-anim 3600ms ease-in-out infinite;
 }
 
 .hero-btn:hover {
   color: white;
-  background-color: rgb(53, 52, 52);
+  background-color: var(--color-sarga2);
   -webkit-box-shadow: 10px 10px 99px 6px rgb(68, 67, 68);
   -moz-box-shadow: 10px 10px 99px 6px rgb(70, 68, 70);
   box-shadow: 10px 10px 99px 6px rgb(70, 69, 70);
+  transform: scale(1.1);
+  animation: btn-animhover infinite;
+}
+
+@keyframes btn-anim {
+  0%, 50% {
+    background-color: var(--color-sarga2);
+    -webkit-box-shadow: 10px 10px 99px 6px rgb(252, 245, 252);
+    -moz-box-shadow: 10px 10px 99px 6px rgb(255, 249, 255);
+    box-shadow: 10px 10px 99px 6px rgb(252, 246, 252);
+    transform: scale(1.1);
+    color: white;
+  }
+
+  50%, 100% {
+    background-color: rgb(53, 52, 52);
+    transform: scale(1);
+    color: var(--color-kek);
+  }
+}
+
+@keyframes btn-animhover {
+  0%,100% {
+    color: white;
+    
+  }
 }
 
 .hero-h1 {
