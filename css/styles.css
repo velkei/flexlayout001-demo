@@ -133,7 +133,13 @@ img {
   z-index: -1;
 }
 
+.navbar a:hover {
+  color: black;
+  font-weight: 700;
+}
+
 .navbar a:hover::before {
+  
   transform: translateX(0);
 }
 
@@ -217,7 +223,7 @@ img {
 
 .hero-btn {
   display: inline-block;
-  padding: 0.6em 1.2em;
+  padding: 0.3em 1.1em;
   text-decoration: none;
   text-transform: uppercase;
   color:black;
@@ -226,6 +232,7 @@ img {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 2em;
+  letter-spacing: 1.4px;
 
   transition: all 250ms;
 }
@@ -375,6 +382,12 @@ img {
   align-items: center;
   flex-direction: column;
   
+}
+
+.elvalaszto-head h1 {
+  font-size: 4rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
 }
 
 .elvalaszto-head h2 {
