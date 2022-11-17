@@ -185,7 +185,8 @@ img {
 .hero-container {
   /*background-color: var(--color-kek);*/
 
-  background: linear-gradient(180deg, var(--color-kek) 8.35%, rgba(0, 0, 0, 0) 153%);
+  /*background: linear-gradient(180deg, var(--color-kek) 8.35%, rgba(0, 0, 0, 0) 153%);*/
+  background: linear-gradient(180deg, rgb(43, 42, 42), rgb(112, 112, 112));
 
   width: 100%;
 
@@ -214,9 +215,9 @@ img {
   width: 40%;
 }
 
-/*.hero-image {
+.hero-image {
   max-width: 100%;
-}*/
+}
 
 .hero-text {
   /*border: 1px solid black;*/
@@ -229,11 +230,12 @@ img {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 2rem;
+  color: whitesmoke;
 }
 
 .hero-btn {
   display: inline-block;
-  padding: 0.3em 1.1em;
+  padding: 0.2em 1.0em;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-kek);
@@ -243,6 +245,7 @@ img {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 
   font-size: 2rem;
   font-weight: 700;
@@ -250,7 +253,7 @@ img {
   letter-spacing: 1.4px;
 
   transition: all 250ms;
-  animation: btn-anim 3600ms ease-in-out infinite;
+  animation: btn-anim 5000ms ease-in-out infinite;
 }
 
 .hero-btn:hover {
@@ -264,7 +267,7 @@ img {
 }
 
 @keyframes btn-anim {
-  0%, 50% {
+  0%, 40% {
     background-color: var(--color-sarga2);
     -webkit-box-shadow: 10px 10px 99px 6px rgb(252, 245, 252);
     -moz-box-shadow: 10px 10px 99px 6px rgb(255, 249, 255);
@@ -273,7 +276,7 @@ img {
     color: white;
   }
 
-  50%, 100% {
+  40%, 100% {
     background-color: rgb(53, 52, 52);
     transform: scale(1);
     color: var(--color-kek);
@@ -290,6 +293,10 @@ img {
 .hero-h1 {
   text-transform: uppercase;
   font-size: 5rem;
+  color: whitesmoke;
+  z-index: 0;
+  letter-spacing: 2px;
+  text-shadow: 10px 10px 20px black;
   
   position: relative;
   /*border: 1px solid black;*/
@@ -300,11 +307,12 @@ img {
   height: 40%;
   width: 100%;
   z-index: -1;
-  background-color: #444342;
+  background-color: var(--color-kek);
+  opacity: 0.2;
 
   position: absolute;
-  top:80px;
-  left:20px;
+  top:70px;
+  left:18px;
 }
 
 
